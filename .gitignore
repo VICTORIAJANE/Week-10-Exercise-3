@@ -4,7 +4,7 @@ int main (){
 
 
 float height = 0;   int weight = 0;
-float BMI = weight/height2;   
+float BMI = weight/height;   
 char underweight;    
 char normal;    
 char overweight;  
@@ -19,6 +19,8 @@ scanf("%f", &height);
 
 printf ("Please enter your weight in kilograms: ");   
 scanf ("%i", &weight);  
+
+
 
 printf("%f", BMI);             
 if(BMI < 18.5){               
