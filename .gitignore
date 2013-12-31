@@ -2,31 +2,54 @@
 
 int main (){
 
+
 float height = 0;   int weight = 0;
-float height2 = height*height;
 float BMI = weight/height2;   
 char underweight;    
 char normal;    
 char overweight;  
 char obese;    
 
+printf("do you want to use metric measurements? Y or N (if N, imperial will be used)");
+ scanf("%c, &c);
+ if (c=='y'){
+
 printf ("Please enter your height in metres: ");
 scanf("%f", &height);  
-printf("%.2f", height2);    
+
 printf ("Please enter your weight in kilograms: ");   
 scanf ("%i", &weight);  
-printf("%i", weight);         
+
 printf("%f", BMI);             
-
 if(BMI < 18.5){               
-printf("%c", underweight);               
+printf("%c", underweight);  
+printf ("%c", you need to eat more);
+}
 
-}else if (BMI >= 18.5 && BMI < 25){    
-printf("%c", normal);    
-}else if (BMI >= 25 && BMI < 30){            
-printf("%c", overweight);           
-}else if (BMI > 30){                  
-printf("%c", obese);                }  
+else if (BMI >= 18.5 && BMI < 25){    
+printf("%c", normal);  
+printf("%c", Congratualtions, you are healthy)
+
+if (BMI>= 25.0 && BMI < 30) { 
+printf ("%c", overweight);
+printf ("%c", You need to try and eat healthier)
+
+if (BMI >= 30 && BMI < 35 ) {
+printf ("%c", Obese);
+printf ("%C", Need to lose weight)
+
+if (BMI >= 35 && BMI < 40) {
+printf ("%c", Severly Obese)
+printf ("%c", Health at risk)
+
+if (BMI >= 40 && BMI < ){
+printf ("%c", Morbidly Obese)
+printf ("%c", Life threatening)
+
+}
+
+return O;
+
+}
 
 
-return 0;}
